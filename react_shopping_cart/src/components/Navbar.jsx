@@ -3,8 +3,9 @@ import Button from './Button.jsx';
 
 export default function Navbar(){
     return <div className='navBar'>
-        <Button buttonID='navbarButton navbarButton1'></Button>
-        <Button buttonID='navbarButton navbarButton2'></Button>
-        <Button buttonID='navbarButton navbarButton3'></Button>
+        <Button button='navbarButton Jackets'></Button>
+        <Button button='navbarButton Tops'></Button>
+        <Button button='navbarButton Boots'></Button>
+        <Button button='navbarButton Pants'></Button>
         </div>
 }

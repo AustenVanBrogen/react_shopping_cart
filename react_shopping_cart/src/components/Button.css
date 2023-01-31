@@ -6,3 +6,7 @@
     background-color: rgb(234,222,213);
     border: 3px solid rgb(101,69,69);
 }
+
+.navbarButton:hover{
+    background-color: rgb(101,69,69);
+}

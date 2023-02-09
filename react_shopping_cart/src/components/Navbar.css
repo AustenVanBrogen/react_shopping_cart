@@ -4,7 +4,7 @@
     width: 100%;
     display: flex;
     background-color: rgb(80,83,112);
-    justify-content: space-around;
+    justify-content: center;
     overflow: hidden;
     
 }

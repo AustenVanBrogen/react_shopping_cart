@@ -3,26 +3,22 @@ import './ItemContainer.css';
 import Item from './Item.jsx';
 
 export default function ItemContainer(){
-    const [urls, setUrls] = useState(['']);                 
+    const [urls, setUrls] = useState([
+        {
+            "title": "",
+            "url": "",
+            "price:": 0
+        }
+    ]);                 
 
-    function initialize(givenJson)
-    {
-        items = givenJson;
-        console.log(items.coats[0].url);
-        // setUrls( ['imgs/MenJacket1.png'] ); //Apparently runs on every render
-    }
-
-    function clickTest(){
-        console.log(items);
-    }
-
+    //Reads data for the items from a json file on startup
     useEffect(() =>{
 
         async function fetchItems(){
             let itemResponse = await fetch('../../shoppingData.json');
             let items = await itemResponse.json();
-            //console.log(items);
-            setUrls([items.coats[0].url]);
+            setUrls(items.coats);
+            console.log(urls);
         }
 
         // console.log(items.coats[0].url);
@@ -31,7 +27,7 @@ export default function ItemContainer(){
     }, []);
   
 
-    return <div className='itemContainer' onClick={clickTest}>
-            <Item url={urls[0]}></Item>
+    return <div className='itemContainer'>
+            <Item url={urls[0].url} itemName={urls[0].title} price={`\$${urls[0].price}`}></Item>
         </div>
 }

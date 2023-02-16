@@ -10,3 +10,16 @@
 .navbarButton:hover{
     background-color: rgb(101,69,69);
 }
+
+.incrementButton{
+    /* Adding this fixed the problem of making a flexbox for both the buttons causing the inside text to move underneath the buttons */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    width: 30px;
+    background-color: rgb(234,222,213);
+    border: 3px solid rgb(101,69,69);
+    text-align: center;
+}

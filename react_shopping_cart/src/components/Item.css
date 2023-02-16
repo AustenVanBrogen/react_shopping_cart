@@ -1,10 +1,17 @@
 .item{
-    height: 25rem;
+    height: 30rem;
     width: 20rem;
     background-color: rgb(80,83,112);
 }
 
+.item .cartAdders{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: small;
+}
+
 img{
-    height: 80%;
+    height: 70%;
     width: 100%;
 }

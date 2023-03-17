@@ -17,17 +17,20 @@ export default function ItemContainer(){
     useEffect(() =>{
         async function fetchItems(){
             let itemResponse = await fetch('../../shoppingData.json');
-            let items = await itemResponse.json();
-            setUrls(items.coats);
-            //console.log(urls);
+            let givenItems = await itemResponse.json();
+            setUrls(givenItems.coats);
+
+            //Austen's epiphany
+            setItems([]); //Clears the items list before each run
 
             let i = 0; //Was having a problem with the items being added after all items were filled
-            items.coats.forEach(element =>{
-                if(i < items.coats.length){
-                    setItems((curItems) =>{                
-                        return [...curItems, <Item url={element.url} itemName={element.title} price={`\$${element.price}`}></Item>]
+            givenItems.coats.forEach(element =>{
+                if(i < givenItems.coats.length && items.length < givenItems.coats.length){
+                    setItems((curItems) =>{
+                        return [...curItems, <Item className='gridItem' url={element.url} itemName={element.title} price={`\$${element.price}`}></Item>];
                     });
                 }
+                i++;
             });
         }
         fetchItems();
@@ -35,7 +38,6 @@ export default function ItemContainer(){
   
 
     return <div className='itemContainer'>
-            {/* <Item url={urls[0].url} itemName={urls[0].title} price={`\$${urls[0].price}`}></Item> */}
             {items}
         </div>
 }

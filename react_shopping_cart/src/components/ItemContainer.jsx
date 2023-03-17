@@ -20,6 +20,9 @@ export default function ItemContainer(){
             let givenItems = await itemResponse.json();
             setUrls(givenItems.coats);
 
+            //Austen's epiphany
+            setItems([]); //Clears the items list before each run
+
             let i = 0; //Was having a problem with the items being added after all items were filled
             givenItems.coats.forEach(element =>{
                 if(i < givenItems.coats.length && items.length < givenItems.coats.length){

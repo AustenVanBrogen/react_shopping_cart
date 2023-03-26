@@ -35,5 +35,104 @@
             "url": "imgs/MenJacket6.png",
             "price": 140.00
         }
+    ],
+
+    "pants":[
+        {
+            "title": "Men’s Class V Pants",
+            "url": "imgs/MenPants1.png",
+            "price": 80.00
+        },
+        {
+            "title": "Men’s Paramount Pro Pants",
+            "url": "imgs/MenPants2.png",
+            "price": 110.00
+        },
+        {
+            "title": "Men’s Standard Modern Pants",
+            "url": "imgs/MenPants3.png",
+            "price": 119.00
+        },
+        {
+            "title": "Men’s Camden Soft Shell Pants",
+            "url": "imgs/MenPants4.png",
+            "price": 130.00
+        },
+        {
+            "title": "Men’s Box NSE Joggers",
+            "url": "imgs/MenPants5.png",
+            "price": 60.00
+        },
+        {
+            "title": "Men’s Heavyweight Box Fleece Sweatpants",
+            "url": "imgs/MenPants6.png",
+            "price": 90.00
+        }
+    ],
+
+    "tops":[
+        {
+            "title": "Men’s Heritage Patch Crew",
+            "url": "imgs/MenTop1.png",
+            "price": 65.00
+        },
+        {
+            "title": "Men’s Short-Sleeve Heritage Patch Pocket Tee",
+            "url": "imgs/MenTop2.png",
+            "price": 35.00
+        },
+        {
+            "title": "Men’s Heritage Patch Crew",
+            "url": "imgs/MenTop3.png",
+            "price": 65.00
+        },
+        {
+            "title": "Men’s Short-Sleeve Brand Proud Tee",
+            "url": "imgs/MenTop4.png",
+            "price": 30.00
+        },
+        {
+            "title": "Men’s Short-Sleeve Heavyweight Box Tee",
+            "url": "imgs/MenTop5.png",
+            "price": 40.00
+        },
+        {
+            "title": "Men’s Long-Sleeve Box NSE Tee",
+            "url": "imgs/MenTop6.png",
+            "price": 40.00
+        }
+    ],
+
+    "boots":[
+        {
+            "title": "Men’s Back-To-Berkeley III Textile Waterproof Boots",
+            "url": "imgs/MenBoots1.png",
+            "price": 139.00
+        },
+        {
+            "title": "Men’s VECTIV™ Exploris 2 Mid FUTURELIGHT™ Leather Boots",
+            "url": "imgs/MenBoots2.png",
+            "price": 189.00
+        },
+        {
+            "title": "Men’s VECTIV™ Fastpack Mid FUTURELIGHT™ Boots",
+            "url": "imgs/MenBoots3.png",
+            "price": 165.00
+        },
+        {
+            "title": "Men’s Cragstone Leather Mid WP Boots",
+            "url": "imgs/MenBoots4.png",
+            "price": 165.00
+        },
+        {
+            "title": "Men’s NSE Chukka",
+            "url": "imgs/MenBoots5.png",
+            "price": 109.00
+        },
+        {
+            "title": "Men’s ThermoBall™ Traction Booties",
+            "url": "imgs/MenBoots6.png",
+            "price": 69.00
+        }
     ]
 }

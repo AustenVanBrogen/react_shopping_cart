@@ -11,6 +11,10 @@
     background-color: rgb(101,69,69);
 }
 
+.active{
+    background-color: rgb(101,69,69);
+}
+
 .incrementButton{
     /* Adding this fixed the problem of making a flexbox for both the buttons causing the inside text to move underneath the buttons */
     display: flex;

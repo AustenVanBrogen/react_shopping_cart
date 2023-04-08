@@ -1,16 +1,25 @@
 import './Button.css';
 import React, {useState, useEffect} from 'react';
 
-export default function Button({button}, {clickedBtn}){
+export default function Button({button, clickedBtn, activeBtn}){
 
     const [active, setActive] = useState('');
+
+    useEffect(() =>{
+        if(getButtonIDs()[1] != activeBtn){
+            setActive('');
+        }
+        else{
+            setActive('active');
+        }
+    }, [activeBtn]);
 
     function handleClick(){
         //console.log(getButtonIDs()[1]);
         //changeSelectedBtn();
 
         clickedBtn(getButtonIDs()[1]) //For some reason is says this passed function doesn't exist. Start here.
-
+        
     }
 
     function getButtonIDs(){
